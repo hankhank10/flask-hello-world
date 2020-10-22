@@ -2,9 +2,11 @@ from flask import Flask
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def hello_world():
     return "Hello world! This is flask!"
+
 
 @app.route('/request_count')
 def request_count():
